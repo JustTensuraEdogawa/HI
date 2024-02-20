@@ -422,11 +422,8 @@ label mod_script_3:
     n 5r "D-Don't just say that!"
     n "You'll make me feel weird about it!"
     mc "Sorry..."
-    "Natsuki crosses her arms and scootches an inch closer to me."
-    n "But It's not like I'm enjoying it or anything!"
-
-    return 
-
+    "Natsuki scootches an inch closer to me."
+    n 42c "But It's not like I'm enjoying it or anything!"
     show natsuki 5g
     "I didn't exactly expect to be sitting this close to her, either..."
     "Not that I can say it's a particularly bad thing."
