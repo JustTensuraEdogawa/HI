@@ -116,6 +116,31 @@ label mod_script_3:
     with wipeleft_scene
 
     "We have begun our walk to school."
-    
+    "As we walk down the road, I see a familiar figure walking by herself."
+    "We decided to walk closer to her."
+    "I decided to cover her eyes."
+    n "Eyaaaaugh!"
+    "She screeched."
+    show natsuki 1v at t11
+    n 4o "Khhh..."
+    show natsuki 4p at f11
+    n "{b}TAKE THIS YOU PERVERT!!!{/b}"
+    "She punched me. HARD."
+    mc "YEEEEEEOOOOWWWW--"
 
+    scene bg residential_day
+    with wipeleft_scene
+    
+    mc "WWWWWWWWWW--""
+
+    scene bg house
+    with wipeleft_scene
+    
+    mc "WWWWWWWWW--""
+
+    scene bg club_day
+    with wipeleft_scene
+
+    mc "WWWWWWWCH!"
+    
     return
