@@ -224,7 +224,7 @@ label wake_up:
     y "I'd love it that you will assist me."
     y 3bd "Thanks for your assistance."
     show sayori 1ba at t33
-    s "Ooh! She is working on [player]'s room? And [player] is coming over occasionally on her?
+    s "Ooh! She is working on [player]'s room? And [player] is coming over occasionally on her?"
     s "I bet something {i}colorful{/i} is going to be beautifully made in his room~"
     mc "Sayori... {w}not again."
     show sayori 4br at h33
