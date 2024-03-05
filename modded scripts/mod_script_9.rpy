@@ -164,7 +164,7 @@ label wake_up:
     s "Natsuki... Yuri's acting like a raccoon again."
     y 3br "Sayori!"
     y "For the last time, I am not a racoo--"
-    n 5bd "Shhh. Raccoons don't talk!"
+    n 5bz "Shhh. Raccoons don't talk!"
     y "That's offensive!"
     mc "That's enough, you two."
     "We all laugh."
@@ -236,10 +236,300 @@ label wake_up:
     m "And now... me and Sayori will be doing our crafts here in the living room!"
     mc "Okay then."
     mc "There is a printer at the corner, over there. You can print using that stuff."
+    m 5a "Okay, [player]!"
+    m 3b "Okay, everyone!"
+    m "Club Members, roll out!"
+    show monika 3b at thide
+    show sayori 1ba at thide
+    hide monika
+    hide sayori
+    "And thus were the activities... we're all set."
+    "Okay, It's time for me to help my girlfriends!"
+    $ mc_help = 0
+    $ n_help = False
+    $ y_help = False
+    $ sm_help = False
     
+    if mc_help == 0:
+        $ helptext = "Who should I help first?"
+    else:
+        $ helptext = "Who should I help next?"
+
+    label help_loop:
+        
+        if mc_help < 3:
+            menu:
+                "[helptext]"
+                "Help Natsuki." if n_help == False:
+                    "I decided to help Natsuki."
+                    "Baking seems to be a very tedious work."
+                    call natsuki_help
+                "Help Yuri." if y_help == False:
+                    "I decided to help Yuri."
+                    "She seems to be eager with me helping her."
+                    call yuri_help
+                "Help Sayori and Monika." if sm_help == False:
+                    "I decided to help Sayori and Monika."
+                    "Helping both of them seems to be fun."
+                    call sayori_and_monika_help
+        else:
+            jump help_done
+            
+        $ mc_help += 1
+        jump help_loop
+        
+    label natsuki_help:
+
+        scene bg kitchen
+        with wipeleft_scene
+
+        $ n_help = True
+
+        "I approached Natsuki in the kitchen."
+        n "Instead of running away, you're coming closer to me?"
+        show natsuki 4ba at t11
+        mc "Yes."
+        mc "I would like to help you in your work."
+        mc "You also want to give me all the dirty work, you said."
+        n 5bs "I only said that to look cool."
+        n "Of course, I wanted to spend time with you."
+        mc "So do I, Natsuki."
+        show natsuki 5bs at thide
+        hide natsuki
+        "We continued our banter towards each other as we work."
+        mc "Can you check if this batter is okay?"
+        show natsuki 1ba at t11
+        "She put her finger on it to taste test."
+        show natsuki 1bk at f11 
+        n "It's not properly mixed."
+        n 1bd "Are you really that weak?"
+        n 5bd "You have to beat the crap out of it!"
+        "She took the bowl of batter from my hand and churned the batter hard."
+        "She taste tested the batter again."
+        n "Now it tastes good."
+        show natsuki 5bd at t11
+        "I tried to taste test the batter as well, but she swatted my hand like its a mosquito."
+        n 1bf "Watch it, [player]!"
+        n "Only I can taste test it!"
+        mc "No fair!"
+        mc "I wanted to at least taste it too."
+        n "I don't want your gross fingers on my cupcake batter!"
+        n 4by "But if you really want to..."
+        "She mischievously smiled and took a big glob of batter on her finger."
+        "And wiped it on my forehead."
+        n 4bz "There! If you can reach it, you can taste it!"
+        n "Problem solved!"
+        mc "Why you little--"
+        show natsuki 4bz at lhide
+        hide natsuki
+        n "Catch me if you can, sucker!"
+        "She started to run around the kitchen table."
+        mc "Get back here!"
+        mc "You can't run forever!"
+        mc "You're on my territory, so I'll catch you eventually."
+        "I eventually cornered her in a wall."
+        scene n_cg3_base
+        show n_cg3_exp1
+        show n_cg3_cake
+        with dissolve_cg
+        n "Ahahaha! Stop!"
+        mc "Not until you wipe off the big glob you put on my head."
+        n "Fine, fine!"
+        n "Let me go though."
+        n "How can I wipe it off if you're pinning me?"
+        mc "Nah, I don't trust you with that."
+        mc "You always tease me."
+        n "...You do that to me all the time, you know!"
+        n "You're the one whose teasing me!"
+        n "Especially when I'm off guard!"
+        n "You really shouldn't tease girls like that."
+        mc "Is that so?"
+        mc "In that case, I probably shouldn't do this, either..."
+        show n_cg3_cake at cgfade
+        hide n_cg3_cake
+        "I take Natsuki's finger and put it in my mouth, licking off the icing."
+        show n_cg3_exp1 at cgfade
+        show n_cg3_exp2 at cgfade
+        hide n_cg3_exp1
+        n "W-W-What--?"
+        n "D-Did you seriously just--"
+        n "A-Ah--"
+        "Natsuki is so surprised that she can't even figure out how to get mad at me."
+        "Her face is entirely red."
+        hide n_cg3_exp2
+        mc "Now we're even."
+        mc "Oh. It tasted pretty good."
+        n "What are you doing?!"
+        n "Eh--"
+        "She can't form any words out of her mouth."
+        show bg kitchen
+        show natsuki 1bn at i11
+        with dissolve_cg
+        "I let go of her."
+        show natsuki 1bv at f11
+        n "Y-you... pervert!"
+        "She punched me hard."
+        mc "Yeowch!"
+        
+        show bg lr
+        with wipeleft_scene
+
+        "I landed facedown on the floor in front of Monika."
+        m "[player]! Are you okay?"
+        m "What happened?"
+        show monika 1a at t11
+        "I get up."
+        "I looked at Monika."
+        mc "Nothing."
+        mc "Nothing happened."
+        m "Are you sure?"
+        mc "Yes, Monika."
+        mc "It's Natsuki were talking about."
+        show monika 3n at f11
+        m "Yeah, you're right."
+        show monika 5a at t11
+        m "Sounds like you're having too much fun in there!"
+        mc "Yes, Ma'am!"
+        mc "No worries."
+        mc "I'll finish helping her as soon as possible so I can assist you later."
+        m 3k "Okay!"
+        show monika 3k at thide
+        hide monika
+        "I went back to Natsuki."
+
+        scene bg kitchen 
+        with wipeleft_scene
+
+        "As I went back, I can see her taking out the cupcakes from the oven already."
+        mc "I'm back."
+        show natsuki 1bn at t11
+        n "Just d-dont do that again, [player]."
+        n "You always... catch me off-guard."
+        mc "You're okay, Natsuki."
+        mc "That's why I love you."
+        n 1bs "I love you too."
+        show natsuki 1bs at thide
+        hide natsuki
+        "We went and continued completing the cupcake designs."
+        "It turned out pretty great!"
+        "There were cupcakes with cute designs, and stuff."
+        n 1ba "Thanks for helping me out."
+        n 5bd "You're no slouch yourself."
+        n "You can be my apprentice in baking, [player]."
+        show natsuki 1bn at face
+        with dissolve_cg
+        "She hugged me."
+        n "Thanks for your help."
+        n "Sorry for punching you."
+        n "I love you."
+        "I flustered."
+        n 1bd "Now, look at your face!"
+        n "That's me when you always catch me off guard."
+        mc "Fine, fine."
+        mc "I love you too."
+        show natsuki 1bd at t11
+        n "I'll clean up everything here, [player]."
+        if mc_help == 0:
+            n "I know they're probably gonna ask you for help as well."
+            n "Go spend time with them."
+            n 4bz "Help them!"
+        else:
+            n 4bz "Go, I'll be fine here."
+
+        mc "Okay, Natsuki."
+        show natsuki 4bz at thide
+        hide natsuki
+        "She went and cleaned the kitchen up."
+
+        scene bg lr
+        with wipeleft_scene
+
+        return
+
+    label yuri_help:
+
+        $ y_help = True
+
+        scene bg bedroom
+        with wipeleft_scene
+
+        "I went upstairs to my bedroom."
+        mc "Hi, Yuri."
+        y "Oh, [player]."
+        y "Glad to see you here."
+        show yuri 1ba at t11
+        y "Offering a hand of assistance, perhaps?"
+        mc "Yes, milady."
+        mc "Let's make these banners beautiful!"
+        y 1bf "Is your handwriting good?"
+        mc "Ah..."
+        mc "I could pass off to be a doctor for my handwriting."
+        y 1bj "Ah I see..."
+        y 1bd "Then I wouldn't mind if you can only assist me in getting what I need."
+        mc "Okay, Yuri."
+        show yuri 1bd at thide
+        hide yuri
+        "We laid out the big canvas on the floor."
+        "She started to setup the paintbrushes and color of the paint."
+        y "[player], would you pass off the red paint beside you?"
+        mc "Oh yeah sure."
+        "I passed her the red paint."
+        if n_help == True:
+            y "I heard you from the kitchen downstairs."
+            y "It seems like Natsuki knocked you down again."
+            mc "Ahahaha."
+            mc "We're having too much fun, I say."
+            y "I see."
+            y "Hopefully, I'm not boring you out."
+            mc "No, no you're fine, Yuri."
+            mc "Sometimes, a bit of relaxation is all I need."
+            y "Oh, okay then."
+        else:
+            pass
+        "She continued her writing on the big canvas."
+        y "Oh. I ran out of paint of this color."
+        y "Buying it now would take a lot of time."
+        y "[player], can you please help me make this paint color?"
+        y "Mix this paint with that paint to produce this same color here."
+        y "You have to mix it with hot water though."
+        y "Else the paint just settles on the top."
+        mc "Okay, Yuri."
+        "I immediately took the two paint cans and went down the kitchen."
+
+        scene bg kitchen
+        with wipeleft_scene
+
+        "I went and made hot water from my electric kettle."
+        n "Oh, [player]."
+        show natsuki 1ba at t11
+        n "Helping Yuri, it seems."
+        mc "Yes, Natsuki."
+        n 4by "Hopefully you're not doing anything weird to her, you creep!"
+        mc "No, no, no!"
+        n 4bz "Just messing with you."
+        show natsuki 4bz at thide
+        hide natsuki
+        "I finished making hot water and brought up the kettle."
+
+        scene bg bedroom
+        with wipeleft_scene
 
 
-    
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # scrapped activity
+    # call activity_minigame
 
     return
