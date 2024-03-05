@@ -196,6 +196,48 @@ label wake_up:
     scene bg lr
     with wipeleft_scene
     
+    "We all gathered together in my living room."
+    mc "Well, Monika... about the things that we need to do..."
+    show monika 1a at t32
+    m "Yeah, about that!"
+    m "Natsuki will be baking cupcakes..."
+    mc "You can use my kitchen. I'll be assisting you whenever you need me."
+    show natsuki 1bd at t31
+    n "Don't be slacking off on me now, mister."
+    n 4bd "I'll let you handle all the dirty work."
+    show sayori 1ba at t33
+    s "Ooh! Dirty work~"
+    mc "Not {i}that{/i} kind of dirty work, Sayori."
+    show sayori 4br at h33
+    s " I know. I'm just messing with you~"
+    mc "Sheesh."
+    show sayori 4br at thide
+    show natsuki 4bd at lhide
+    hide natsuki
+    hide sayori
+    m 3a "Now, Yuri is going to be working on the banners."
+    m "Do you have any sort of space that she can work on it, [player]?"
+    mc "She can work on my room, Monika."
+    mc "There's a lot of office supplies there on my desk as well to help on her work."
+    mc "I'll be your helping hand when you need me, Yuri."
+    show yuri 1ba at t31
+    y "I'd love it that you will assist me."
+    y 3bd "Thanks for your assistance."
+    show sayori 1ba at t33
+    s "Ooh! She is working on [player]'s room? And [player] is coming over occasionally on her?
+    s "I bet something {i}colorful{/i} is going to be beautifully made in his room~"
+    mc "Sayori... {w}not again."
+    show sayori 4br at h33
+    s "It's fun teasing you like that, [player]~"
+    show yuri 1ba at lhide
+    hide yuri
+    show monika 3a at t21
+    show sayori 1ba at t22
+    m "And now... me and Sayori will be doing our crafts here in the living room!"
+    mc "Okay then."
+    mc "There is a printer at the corner, over there. You can print using that stuff."
+    
+
 
     
 
