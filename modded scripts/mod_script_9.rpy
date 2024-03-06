@@ -536,7 +536,49 @@ label wake_up:
         mc "Ahh! I'm so sorry!"
         "I immediately went to the bathroom."
         "I grabbed a towel, dipped it in hot water, made it lukewarm and wiped Yuri's face."
-        scene bg y_cg3_base with dissolve_cg
+        scene y_cg3_base with dissolve_cg
+        mc "I'm so, so sorry, Yuri."
+        y "It's okay, [player]."
+        y "We all share our mishaps sometimes."
+        "The paint is hard to come off."
+        "Looks like I'll be working on this for a while."
+        y "Yeah, the paint is very sticky. It's hard to come off on soft surfaces, especially skin."
+        mc "I really, apologize for this."
+        y "No, no its okay."
+        show y_cg3_exp1 with cgfade
+        y "I do kind of enjoy this, to be honest."
+        y "It feels like you're caressing me."
+        y "Your gentle touch soothes me."
+        "She seemed to be relaxed."
+        "She really loves it."
+        "She's like a cat that likes to be petted."
+        "How adorable is this cute angel?"
+        "I never would've thought that I will get to have a girlfriend this beautiful."
+        mc "There. All gone now."
+        "I successfully removed the paint in her face."
+        "She held my wrist."
+        hide y_cg3_exp1
+        y "Please... do it a bit more."
+        y "Wipe my face clean."
+        mc "But there's no more--"
+        "She took a paintbrush, dipped it in the paint, and painter her other face!"
+        y "There. There is more!"
+        "She aggressively said."
+        mc "Oh. okay."
+        "I moved the towel on my hand and caressed her, stroking my hand towards her face gently."
+        y "It soothes me, [player]."
+        y "I love you."
+        mc "I love you too, Yuri."
+        "I wiped her face clean."
+        scene bg bedroom
+        show yuri 1ba at i11
+        with dissolve_cg
+        mc "Feeling better now?"
+        y 3bm "Yes. Thank you for that."
+        y "Let's get back to our banner."
+        show yuri 3bm at thide
+        hide yuri
+        "We continued to work on the banner."
 
 
 
