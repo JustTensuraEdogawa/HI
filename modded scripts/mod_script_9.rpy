@@ -522,7 +522,7 @@ label wake_up:
         y "How sweet of you."
         y 1ba "You always never cease to amaze me."
         y "I love you, [player]."
-        mc "I love you too.
+        mc "I love you too."
         "I started to get a cup from what I bought yesterday to put the paint."
         "Meanwhile, Yuri is making tea while waiting for my mixture."
         mc "Let's see here..."
