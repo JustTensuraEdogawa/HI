@@ -514,6 +514,29 @@ label wake_up:
         scene bg bedroom
         with wipeleft_scene
 
+        "I went back up to the bedroom and laid down the paint cans and the kettle."
+        mc "I'll be doing the mixing here, and brought the electric kettle with me."
+        mc "And got enough water for the paint cans... {w}and maybe some tea later."
+        mc "I have some tea packets I bought yesterday."
+        show yuri 1bd at t11
+        y "How sweet of you."
+        y 1ba "You always never cease to amaze me."
+        y "I love you, [player]."
+        mc "I love you too.
+        "I started to get a cup from what I bought yesterday to put the paint."
+        "Meanwhile, Yuri is making tea while waiting for my mixture."
+        mc "Let's see here..."
+        "I poured a small amount of paint into the other."
+        "Sure enough, the paint I poured settled at the top."
+        mc "Time to pour the hot water."
+        "As I was pouring the hot water, I accidentally poured the hot water on myself."
+        mc "Yeowch! Hot!"
+        "I accidentally splashed Yuri with the mixture on her face."
+        y "Yeowch!"
+        mc "Ahh! I'm so sorry!"
+        "I immediately went to the bathroom."
+        "I grabbed a towel, dipped it in hot water, made it lukewarm and wiped Yuri's face."
+
 
 
 
