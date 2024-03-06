@@ -536,6 +536,7 @@ label wake_up:
         mc "Ahh! I'm so sorry!"
         "I immediately went to the bathroom."
         "I grabbed a towel, dipped it in hot water, made it lukewarm and wiped Yuri's face."
+        scene bg y_cg3_base with dissolve_cg
 
 
 
