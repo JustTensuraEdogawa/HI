@@ -322,7 +322,23 @@ label chapter_four:
     $ style.say_dialogue = style.normal
     "..."
     "How does she know were coming?"
-        
+    "This is very nerve-racking, but I have to set my girlfriends free."
+    "I gently open the clubroom door."
+    
+    scene bg club_night
+    with wipeleft_scene
+
+    "To my surprise, there is a figure sitting on Monika's desk, performing some sort of voodoo ritual type of thing."
+    "I approached the figure."
+    mc "Hey! what are you doing?!"
+    $ style.say_dialogue = style.edited
+    a "So you've come."
+    a "Hehehe, you're pretty resilient. You will be part of my army soon..."
+    a "Name's Amethyst. Amethyst-sama."
+    a "Better address me that way from now."
+    mc "You're hurting my girlfriends!"
+    a "Ara-ara, so they are {i}your{/i} girlfriends?"
+    a "What a pleasant surprise."
 
 
 
