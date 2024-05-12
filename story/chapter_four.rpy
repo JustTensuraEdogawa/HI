@@ -333,12 +333,228 @@ label chapter_four:
     mc "Hey! what are you doing?!"
     $ style.say_dialogue = style.edited
     a "So you've come."
+    show amy robe at t32
     a "Hehehe, you're pretty resilient. You will be part of my army soon..."
     a "Name's Amethyst. Amethyst-sama."
+    $ a_name = 'Amethyst'
     a "Better address me that way from now."
+    $ style.say_dialogue = style.normal
     mc "You're hurting my girlfriends!"
+    $ style.say_dialogue = style.edited
     a "Ara-ara, so they are {i}your{/i} girlfriends?"
     a "What a pleasant surprise."
+    a "I despise you..."
+    a "You, being popular with girls..."
+    a "You have lots of friends!"
+    a "Girlfriends at that!"
+    a "While here I am, stuck at being alone..."
+    a "Well who am I kidding?"
+    "She starts to cry."
+    a "I am always alone, because of my weird fetish."
+    a "So what if I like spiders?"
+    a "I can be caring!"
+    a "All I wanted is to never be alone..."
+    a "Is that too much to ask?"
+    a "But now... with the power of the Dark Arts I read here in the library for hours..."
+    a "I can now form an army of my own..."
+    a "Mindless feeble humans obeying my will..."
+    a "I WILL NEVER, EVER, BE ALONE ANYMORE!!!"
+    a "AHA A HA HA HA HA HA HA HA HA HAHAHA HA AHA  HA HA!"
+    $ style.say_dialogue = style.normal
+    mc "I... feel you..."
+    mc "I was... alone... too."
+    mc "I am a NEET."
+    mc "Or so I was."
+    mc "Stop this nonsense."
+    mc "You're just scaring away the people around you."
+    "She shouted angrily."
+    $ style.say_dialogue = style.edited
+    a "AND YOU'RE RUBBING IT IN!"
+    a "YOU'RE MAKING IT ONLY WORSE!"
+    a "I'VE HAD ENOUGH!"
+    a "I can see that you disabled my soul control."
+    a "I can reactivate it again HAHAHAH!"
+    $ style.say_dialogue = style.normal
+    "She presses a button in the relic she's holding."
+    mc "No! You can't do this to my girlfriends!"
+    show white zorder 4:
+        alpha 0.6
+        linear 0.25 alpha 0.0
+    mc "Holy Aura!"
+    "I managed to release a holy aura."
+    "Most of my girlfriends were protected and not affected."
+    "Except... {w}two..."
+    "Oh no."
+    show sayori turned e0a rup casual lup at t31
+    show yuri turned e0a rup casual lup at t33 
+    "She still got Sayori and Yuri."
+    m "Sayori! Yuri!"
+    c "You're not getting away with this!"
+    mc "Stop!"
+    play sound "mod_assets/powerup.mp3"
+    show white zorder 4:
+        alpha 0.6
+        linear 0.25 alpha 0.0
+    n "It's clear she aint listening."
+    n "So I'm about to talk some sense into her with my fists!"
+    $ style.say_dialogue = style.edited
+    a "I wouldn't do that if I were you."
+    a "I could make these 2 here kill each other if I want."
+    s "Amethyst-sama... It hurts..."
+    y "Amethyst-sama... I..."
+    a "Go ahead."
+    a "Tackle me."
+    $ style.say_dialogue = style.normal
+    m "I ain't doing that to you."
+    "Monika ain't playing."
+    $ style.say_dialogue = style.edited
+    a "Oh, you're right."
+    a "It was interesting when I took over your soul."
+    a "It just sucks that I flunked programming class."
+    a "If I had learned more about it, I could've ruled the world."
+    a "But... I have something that you don't..."
+    $ style.say_dialogue = style.normal
+    "She chanted some sort of spell."
+    "Monika fell on the floor."
+    m "My arms! They're so heavy!"
+    $ style.say_dialogue = style.edited
+    a "I made your arms as heavy as a wrecking ball."
+    a "If you can't code, you can't use your power."
+    $ style.say_dialogue = style.normal
+    k "Monika!"
+    "Ken attended to Monika."
+    "Cara and Natsuki just stood there, not knowing what to do."
+    $ style.say_dialogue = style.edited
+    a "If you all agree to be my slave, this will all be over."
+    $ style.say_dialogue = style.normal
+    "I need some sort of water to atleast free one of them..."
+    "Water... water..."
+    "I looked around."
+    "I looked at Cara."
+    "I looked at Natsuki."
+    "And an idea popped on my head."
+    mc "Natsuki?"
+    n "Not now, [player]."
+    "I hugged Natsuki tight."
+    n "Wait--"
+    n "W-ww-w-w-w-what are you d-d-d-oing?"
+    n "Get off me!"
+    mc "I just wanna hug my girlfriend, that's what."
+    n "Why now, dummy?!"
+    c "Yeah, [player]. Why now?"
+    c "We're in a dire situation!"
+    $ style.say_dialogue = style.edited
+    a "It seems that your boyfriend lost his mind now."
+    $ style.say_dialogue = style.normal
+    mc "Thank you Natsuki. I love you."
+    mc "Holy aura!"
+    "I splashed my holy-infused water to Sayori."
+    "Sayori fell down."
+    show sayori at thide
+    hide sayori 
+    s "Owww. my head."
+    mc "Sayori!"
+    "I managed to get her and protect her from being controlled."
+    $ style.say_dialogue = style.edited
+    a "WHAT. {w}DID. {w}YOU. {w}DO?"
+    $ style.say_dialogue = style.normal
+    mc "I infused Natsuki's sweat with my aura and splashed it to Sayori."
+    mc "It's really hard to make her nervous."
+    mc "But I'm glad it worked!"
+    play sound "sfx/slap.ogg"
+    mc "Ow!"
+    n "You dummy!"
+    n "If I would've known, I wouldn't be flustered like this!"
+    mc "Natsuki, If you knew, then you wouldn't be nervous."
+    n "Uuuuu."
+    n "Thanks."
+    n "It's not I liked that or anything..."
+    "Cara just laughs."
+    c "You're cute, Natsuki."
+    n "Stop that!"
+    $ style.say_dialogue = style.edited
+    a "It seems I underestimated you..."
+    a "I should've gone for you first!"
+    a "Say goodbye!"
+    show amy at thide
+    hide amy
+    show yuri b1b e0b mo at t11
+    $ style.say_dialogue = style.normal
+    "Yuri armed herselves with the 3 knives she had."
+    $ style.say_dialogue = style.edited
+    y "Three-knives style..."
+    show yuri at face
+    $ style.say_dialogue = style.normal
+    "She's fast."
+    "She's in front of me."
+    s "YURI STOPPP!"
+    play sound "sfx/stab.ogg"
+    "Sayori moved herself in front of me."
+    "Sayori was stabbed."
+    mc "Sayoriiiiiiiiiiiiiiiiiiiiiiiiiii!"
+    $ style.say_dialogue = style.edited
+    y "HEHEHEHEHEHE..."
+    show yuri at t11
+    $ style.say_dialogue = style.normal
+    "I pushed Yuri away."
+    mc "{b}That. {w}Is. {w}Enough.{/b}"
+    mc "{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!{/b}"
+    play sound "mod_assets/powerup.mp3"
+    show white zorder 4:
+        alpha 0.6
+        linear 0.25 alpha 0.0
+    scene bg club_day
+    "I released a very powerful aura..."
+    "So strong that the light I emit makes it look like it's afternoon."
+    "Amethyst saw me flashing."
+    $ style.say_dialogue = style.edited
+    a "What is happening?"
+    $ style.say_dialogue = style.normal
+    "Tables, chairs, were shaking."
+    $ style.say_dialogue = style.edited
+    a "Argh!"
+    $ style.say_dialogue = style.normal
+    "She got pushed to the front of the clubroom."
+
+    scene bg class_day
+    with wipeleft_scene
+
+    "I teleported in front of her."
+    mc "Checkmate."
+    "The hoodie on her robe fell."
+    "And we both looked each other in the eye."
+    show white zorder 4:
+        alpha 0.6
+        linear 0.25 alpha 0.0
+    "ZING!!!"
+    stop music fadeout 2.0
+    scene bg class_night
+    with dissolve_cg
+    "Oh hell nah."
+    "Renpy-sama... WHYYYY?"
+    "Well, she is supposed to be one of my girlfriends."
+    "I'm supposed to know the drill..."
+    "Here goes nothing."
+    mc "Amethyst?"
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
 
 
 
