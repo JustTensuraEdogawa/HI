@@ -349,7 +349,9 @@ label chapter_four:
     a "Girlfriends at that!"
     a "While here I am, stuck at being alone..."
     a "Well who am I kidding?"
+    $ style.say_dialogue = style.normal
     "She starts to cry."
+    $ style.say_dialogue = style.edited
     a "I am always alone, because of my weird fetish."
     a "So what if I like spiders?"
     a "I can be caring!"
@@ -497,8 +499,8 @@ label chapter_four:
     show yuri at t11
     $ style.say_dialogue = style.normal
     "I pushed Yuri away."
-    mc "{b}That. {w}Is. {w}Enough.{/b}"
-    mc "{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!{/b}"
+    mc "{b}That. {w}Is...{/b}"
+    mc "{b}ENOUGHHHHHHHHHHHHHH!{/b}"
     play sound "mod_assets/powerup.mp3"
     show white zorder 4:
         alpha 0.6
@@ -536,26 +538,208 @@ label chapter_four:
     "I'm supposed to know the drill..."
     "Here goes nothing."
     mc "Amethyst?"
-    
+    mc "Wait..."
+    mc "Amy?"
+    show amy 4er at t32
+    "This is my classmate, Amy."
+    "She sits way back in our classroom."
+    "I only heard her name every school attendance."
+    "She always disappears during lunch breaks."
+    "I never actually got to talk with her."
+    "This is the {i}first{/i} time."
+    $ a_name = 'Amy'
+    a "..."
+    a "Oh, it's you, [player]."
+    a "I'm sorry."
+    show natsuki 5bh at t33 
+    n "You know this girl?"
+    mc "Yeah, she's my classmate."
+    show natsuki 5bw at f33
+    n "Your class sure have a lot of weird people in it."
+    n 5bl "Starting with you."
+    show natsuki at t33
+    show cara 3ac at t31
+    c "[player]! We're losing Sayori!"
+    c "She's not breathing!"
+    mc "What?"
+    show cara at thide
+    show amy at thide
+    show natsuki at thide
+    hide cara
+    hide amy
+    hide natsuki
+    show bg club_night
+    with wipeleft_scene
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
+    "I went back to Sayori."
+    "Her body looks paler than before."
+    play music t9
+    show yuri turned rup cry casual mk lup at t33 
+    y "I'm sorry, I'm sorry!"
+    mc "It's not your fault, Yuri."
+    show yuri ml at f33
+    y "But I stabbed her!"
+    mc "I'm not blaming you for this."
+    mc "Let's focus on Sayori at the moment."
+    show yuri at t33
+    "I panicked."
+    mc "Meiji? Are you there?"
+    mj "Hello, Master! How may I of service today?"
+    mc "Please analyze Sayori."
+    mc "Is there anything we can do for her?"
+    mj "Analyzing.{w=1.5}.{w=1.5}."
+    mj "Analysis complete."
+    mj "I'm sorry, [player]."
+    mj "She's gone."
+    mc "What?!"
+    mc "I have tons of powers! Can we bring her back?"
+    mj "Unfortunately, It is beyond your power."
+    show monika forward ce cry casual me at t31
+    m "It's true, [player]."
+    m lpoint e1h "Even I, can't bring back people from the dead."
+    show monika mh at f31
+    m "True, I can create, destroy, delete, copy, paste."
+    m "But that's that."
+    m "If a character file is dead, then I can only copy that file, delete, recreate. But it's still going to be lifeless."
+    m "I'm not as powerful as Renpy-sama."
+    m "If a soul has left one's body, that's it."
+    mc "..."
+    mc "I can't accept this..."
+    "The tables and chairs begin to violently shake again."
+    show bg club_day
+    with dissolve_cg
+    "I'm going to {b}end{/b} everything."
+    "My best friend died."
+    "My girlfriend died."
+    "{b}I'm going all out.{/b}"
+    m "... Stop!"
+    $ run_input("os.GodMode/mc.chr = False", "Successfully deactivated.")
+    m "One more..."
+    $ run_input("os.setpowerlevel/mc.chr = 5", "Successfully set.")
+    m "There..."
+    hide screen console_screen
+    show bg club_night
+    with dissolve_cg
+    "I lost my God powers."
+    "Monika took it away from me."
+    "I managed to calm down."
+    mc "Sorry, Monika."
+    mc "I got a little carried away."
+    mc "But Sayori..."
+    a "Hey, [player]."
+    mc "Amy?"
+    show amy 4er at t32
+    "Amy stepped forward."
+    show yuri turned vang casual om at f33
+    y "You..."
+    y "You did this to us!"
+    y "Now we lost Sayori!"
+    show yuri at t33
+    show amy 4eu at f32
+    a "I'm sorry, okay?!"
+    show amy at t32
+    show monika forward rhip vang casual om at f31
+    m "Your apology won't bring her back!"
+    m lpoint "I'll just delete you right here, right now!"
+    show amy at f32
+    show monika at t31
+    a "Wait!"
+    a "I understand you're angry at me..."
+    a 4ji "But..."
+    a 4eu "I can bring her back to life."
+    a "I have taught myself revival spells."
+    a "Courtesy of the Dark Arts book I found in the library."
+    mc "What?"
+    mc "You can {i}revive{/i} dead people?"
+    a 7k "Yeah."
+    a "I just need the right tools."
+    mc "Tell me what it is, and Monika will spawn it for you."
+    a "Okay..."
+    a "I need..."
+    stop music fadeout 2.0
+    hide monika
+    hide amy
+    hide yuri 
+    with wipeleft
+    "Amy and Monika prepared the things needed for the revival spell."
+    show amy 61u at t11
+    a "Here goes nothing..."
+    $ style.say_dialogue = style.edited
+    a "Efil ot kcab emoc, Iyoras, eeht dnammoc I, ssenkrad fo rewop eht yb!"
+    a "Secret Dark Arts spell: RESURRECTION!"
+    show white zorder 4:
+        alpha 0.6
+        linear 0.25 alpha 0.0
+    $ style.say_dialogue = style.normal
+    "A brief flash of light envelops the room."
+    s "..."
+    s "*cough* *cough*"
+    s "Ow... My head..."
+    show amy at t42
+    show sayori 1bm zorder 3 at t43
+    s "I haven't said goodbye to St. Cow!"
+    show yuri turned cry casual mb lup rup at t44 
+    y "Sayori!"
+    play music t9
+    show yuri at t43
+    y "We thought we lost you..."
+    y mi "I'm sorry!"
+    show monika forward cry casual mb at t41 
+    m "Sayori!"
+    m "The spell worked!"
+    show sayori at thide
+    show yuri at thide
+    show monika at thide
+    hide monika 
+    hide yuri 
+    hide sayori 
+    show amy at t11
+    "We all hugged Sayori."
+    m "Hey, Amy, you're not that bad at all."
+    show monika casual b1b mb lpoint at t21
+    show amy 1a at t22
+    m "You're just isolated."
+    m "Alone."
+    m "I'm willing to forgive you."
+    show amy 1ji at f22
+    a "Again, I'm sorry."
+    a "I'm just... so lonely..."
+    mc "Hey, I do get the feeling..."
+    mc "Hey, why don't you join the Literature Club?"
+    mc "I'm inviting you over!"
+    e "What?"
+    n "What the heck?"
+    m ldown b1e mg "I know I forgived her, [player]."
+    m lpoint "But it doesn't mean she's invited."
+    a "I understand."
+    mc "I'll take the blame for this..."
+    mc "In fact..."
+    show amy at face
+    show monika ldown at t31
+    mc "Amy, I'm willing to accompany you so that you'll never be alone."
+    mc "I'll accept you to be one of my girlfriends..."
+    e "What?!"
+    n "Aw, come on man!"
+    a 2ex "T-that's too much, [player]."
+    a "I can't be with you after all I've done..."
+    mc "No, It's alright."
+    show natsuki 5be at t33 
+    n "What do you {i}mean{/i} it's alright?"
+    n "She made Yuri kill Sayori!"
+    mc "Girls, I understand."
+    mc "But please think of this differently."
+    mc "She's just lonely."
+    mc "Yeah it is inexcusable to kill somebody for it but..."
+    mc "If it wouldn't for her, Sayori is permanently gone."
+    mc "She can be caring she said if she has friends."
+    mc "We can help her."
+    mc "I'll take all the blame for what she caused."
+    mc "Monika, delete me if you like to delete her."
+    mc "Natsuki, beat me to a pulp if that's what you want to do to her."
+    mc "I'll take the blame since she's my classmate."
+    mc "I should've gotten to know her since the first day of class."
+    mc "None of this would've happened if I became friends with her then."
+    mc "This is all my fault."
 
 
 
