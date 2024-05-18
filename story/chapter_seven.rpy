@@ -170,7 +170,7 @@ label chapter_seven:
     s "But..."
     s "Monika didn't listen to me."
     s "I said they already read manga before sparring."
-    s "I don't know if she's on her... {w}{i}you know...{/i}
+    s "I don't know if she's on her... {w}{i}you know...{/i}"
     s "But it escalated quickly."
     s "Natsuki started to argue and used pretty harsh words towards her."
     s "Monika was contemplating to use her God powers or something..."
