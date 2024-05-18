@@ -163,8 +163,23 @@ label chapter_seven:
     show sayori 1v at t11
     s "But Monika is just a meanie."
     show sayori 1w at f11 
-    s "She called out Cara and Natsuki not doing Literature related activities..."
+    s "She called out Cara and Natsuki not doing literature related activities..."
     s "Which is sparring."
     s "But I knew for a fact that they read Manga before doing their sparring session."
+    s "I stood up for them as Vice President."
+    s "But..."
+    s "Monika didn't listen to me."
+    s "I said they already read manga before sparring."
+    s "I don't know if she's on her... {w}{i}you know...{/i}
+    s "But it escalated quickly."
+    s "Natsuki started to argue and used pretty harsh words towards her."
+    s "Monika was contemplating to use her God powers or something..."
+    s "But she chose to indefinitely suspend both."
+    s "I was annoyed by it."
+    s "So I said, I'm going with them, form a literature club of our own where we can express ourselves freely."
+    s "Monika didn't stop me."
+    s "She just sighed."
+    s "[player]..."
+    s "Have I done anything wrong?"
     
 
